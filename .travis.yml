@@ -16,5 +16,5 @@ notifications:
 
 script:
   - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
-  - julia -e 'using Pkg; Pkg.clone(pwd())'
+  - julia -e 'using Pkg; Pkg.activate(".")'
   - julia -e 'using Pkg; Pkg.test("Exercism")'
