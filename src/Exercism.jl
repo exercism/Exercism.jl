@@ -2,12 +2,14 @@ module Exercism
 
 using JSON
 
+"Open the notebook for the excersice 'slug' in the current directory and create a submittable 'slug.jl' file containing the user solution."
 function create_submission(slug)
     open("$slug.jl", "w") do f
         write(f, parse_notebook("$slug.ipynb"))
     end
 end
 
+"Parses the notebook in 'path' and returns the code of all cells marked with # submit"
 function parse_notebook(path)
     nb = open(JSON.parse, path, "r")
 
