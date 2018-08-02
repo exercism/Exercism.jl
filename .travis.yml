@@ -1,0 +1,20 @@
+language: julia
+os:
+  - osx
+  - linux
+
+julia:
+  - 0.7
+  - nightly
+
+matrix:
+  allow_failures:
+    - julia: nightly
+
+notifications:
+  email: false
+
+script:
+  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
+  - julia -e 'using Pkg; Pkg.clone(pwd())'
+  - julia -e 'using Pkg; Pkg.test("Exercism")'
