@@ -5,6 +5,7 @@ os:
 
 julia:
   - 0.7
+  - 1.0
   - nightly
 
 matrix:
@@ -14,7 +15,5 @@ matrix:
 notifications:
   email: false
 
-script:
-  - if [[ -a .git/shallow ]]; then git fetch --unshallow; fi
-  - julia -e 'using Pkg; Pkg.activate(".")'
-  - julia -e 'using Pkg; Pkg.test("Exercism")'
+after_success:
+- julia -e 'cd(Pkg.dir("Exercism")); Pkg.add("Coverage"); using Coverage; Codecov.submit(process_folder())'
