@@ -9,6 +9,10 @@ function create_submission(slug)
     end
 end
 
+function some_untested_function()
+    1
+end
+
 "Parses the notebook in 'path' and returns the code of all cells marked with # submit"
 function parse_notebook(path)
     nb = open(JSON.parse, path, "r")
