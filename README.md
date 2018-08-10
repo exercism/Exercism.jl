@@ -1,5 +1,6 @@
 # Exercism.jl
-[![Build Status](https://travis-ci.org/SaschaMann/Exercism.jl.svg?branch=master)](https://travis-ci.org/SaschaMann/Exercism.jl)
+[![Build Status](https://travis-ci.org/exercism/exercism-julia-tooling.svg?branch=master)](https://travis-ci.org/exercism/exercism-julia-tooling)
+[![codecov](https://codecov.io/gh/exercism/exercism-julia-tooling/branch/master/graph/badge.svg)](https://codecov.io/gh/exercism/exercism-julia-tooling)
 
 Exercism.jl provides utility functions to solve exercises on exercism.io in interactive environments such as IJulia notebooks.
 
