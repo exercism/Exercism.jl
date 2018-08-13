@@ -1,7 +1,7 @@
 name = "Exercism"
 uuid = "6c776c10-959d-11e8-058b-8f5b68a13ac9"
 authors = ["Sascha Mann <sascha.mann@posteo.de>"]
-version = "0.1.0"
+version = "0.1.1"
 
 [deps]
 JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
