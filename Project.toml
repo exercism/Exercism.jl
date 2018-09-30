@@ -1,6 +1,6 @@
 name = "Exercism"
 uuid = "6c776c10-959d-11e8-058b-8f5b68a13ac9"
-authors = ["Sascha Mann <sascha.mann@posteo.de>"]
+authors = ["Sascha Mann <git@mail.saschamann.eu>"]
 version = "0.1.1"
 
 [deps]
