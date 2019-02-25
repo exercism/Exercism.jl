@@ -1,5 +1,5 @@
 name = "Exercism"
-uuid = "6c776c10-959d-11e8-058b-8f5b68a13ac9"
+uuid = "b06d6668-ed87-5b0c-b882-855c8dde7d29"
 authors = ["Sascha Mann <git@mail.saschamann.eu>"]
 version = "0.1.2"
 
