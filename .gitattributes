@@ -1,0 +1,2 @@
+# IJulia notebooks show up as Julia
+*.ipynb linguist-language=Julia
