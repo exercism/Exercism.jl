@@ -1,26 +1,24 @@
-name: Run tests
+name: VersionVigilante.jl
 
-on: [push, pull_request]
+on: pull_request
 
 jobs:
   test:
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        julia-version: ['1']
-        julia-arch: [x64]
-        os: [ubuntu-latest]
+    runs-on: ubuntu-latest
     
     steps:
       - uses: actions/checkout@v1.0.0
-      - name: "Set up Julia"
-        uses: julia-actions/setup-julia@v0.3
-        with:
-          version: ${{ matrix.julia-version }}
-          arch: ${{ matrix.julia-arch }}
-      - name: "Run tests"
+      - uses: julia-actions/setup-julia@latest
+
+      - name: VersionVigilante.main
         run: |
-          julia --version
           julia -e 'using Pkg; Pkg.add(Pkg.PackageSpec(url = "https://github.com/bcbi/VersionVigilante.jl"))'
           julia -e 'using VersionVigilante; VersionVigilante.main("https://github.com/${{ github.repository }}")'
 
+      - name: ❌ Labeller
+        if: failure()
+        uses: actions/github-script@0.3.0
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.issues.addLabels({...context.issue, labels: ['needs version bump']})
