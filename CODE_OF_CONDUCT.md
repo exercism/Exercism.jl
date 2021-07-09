@@ -80,3 +80,11 @@ If you say something that is found offensive, and you are called out on it, try 
 This policy was initially adopted from the Front-end London Slack community and has been modified since. A version history can be seen on [GitHub](https://github.com/exercism/website-copy/edit/main/pages/code_of_conduct.md).
 
 _This policy is a "living" document, and subject to refinement and expansion in the future. This policy applies to the Exercism website, the Exercism GitHub organisation, any other Exercism-related communication channels (e.g. Slack, Twitter, email) and any other Exercism entity or event._
+
+## Addendum
+
+Furthermore, on the Julia-specific repos and website sections, do not sexualize or genderize the term "Julia" or any other aspects of the project.
+While "Julia" is a female name in many parts of the world, the programming language is not a person and does not have a gender.
+
+In natural languages where attaching a grammatical gender to the name "Julia" is unavoidable, exceptions may be made.
+However, consider using language constructs such as "the programming language Julia" and then referring to "the programming language" whenever possible.
