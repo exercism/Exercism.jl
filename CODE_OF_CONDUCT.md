@@ -6,7 +6,7 @@ Exercism is a platform centered around empathetic conversation. We have a low to
 
 ## Seen or experienced something uncomfortable?
 
-If you see or experience abuse, harassment, discrimination, or feel unsafe or upset, please email abuse@exercism.org. We will take your report seriously.
+If you see or experience abuse, harassment, discrimination, or feel unsafe or upset, please email [abuse@exercism.org](mailto:abuse@exercism.org?subject=%5BCoC%5D) and include \[CoC\] in the subject line. We will follow up with you as a priority.
 
 ## Enforcement
 
@@ -80,6 +80,7 @@ If you say something that is found offensive, and you are called out on it, try 
 This policy was initially adopted from the Front-end London Slack community and has been modified since. A version history can be seen on [GitHub](https://github.com/exercism/website-copy/edit/main/pages/code_of_conduct.md).
 
 _This policy is a "living" document, and subject to refinement and expansion in the future. This policy applies to the Exercism website, the Exercism GitHub organization, any other Exercism-related communication channels (e.g. Slack, Twitter, email) and any other Exercism entity or event._
+
 
 ## Addendum
 
